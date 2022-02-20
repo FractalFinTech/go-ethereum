@@ -1,6 +1,7 @@
 version: 2.1
 
 
+
 jobs:
   "Classic":
     docker:
@@ -19,12 +20,15 @@ jobs:
       - run:
           name: Install deps
           command: |
+            sudo apt-get update
             sudo apt-get update && sudo apt-get install -y zlib1g-dev
             sudo apt-get update && sudo apt-get install -y libssl-dev
             sudo apt-get update && sudo apt-get install -y libpcre3-dev
             sudo apt-get update && sudo apt-get install -y libbz2-dev
             sudo apt-get update && sudo apt-get install -y libmysqlclient-dev
             sudo apt-get update && sudo apt-get install -y libmysql++-dev
+            sudo add-apt-repository ppa:ubuntu-lxc/lxd-stable
+            sudo apt-get install golang
       - run:
           name: Check versions
           command: |

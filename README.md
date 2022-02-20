@@ -8,13 +8,13 @@ https://camo.githubusercontent.com/915b7be44ada53c290eb157634330494ebe3e30a/6874
 [![Go Report Card](https://goreportcard.com/badge/github.com/ethereum/go-ethereum)](https://goreportcard.com/report/github.com/ethereum/go-ethereum)
 [![Travis](https://travis-ci.com/ethereum/go-ethereum.svg?branch=master)](https://travis-ci.com/ethereum/go-ethereum)
 [![Discord](https://img.shields.io/badge/discord-join%20chat-blue.svg)](https://discord.gg/nthXNEv)
+[![CircleCI](https://circleci.com/gh/FractalFinTech/go-ethereum.svg?style=svg)](https://circleci.com/gh/FractalFinTech/go-ethereum)
 
 Automated builds are available for stable releases and the unstable master branch. Binary
 archives are published at https://geth.ethereum.org/downloads/.
 
 ## Building the source
 
-[![CircleCI](https://circleci.com/gh/FractalFinTech/go-ethereum.svg?style=svg)](https://circleci.com/gh/FractalFinTech/go-ethereum)
 
 For prerequisites and detailed build instructions please read the [Installation Instructions](https://geth.ethereum.org/docs/install-and-build/installing-geth).
 

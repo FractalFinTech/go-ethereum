@@ -59,6 +59,12 @@ jobs:
           name: dir command
           command: |
             ls -l
+      - run:
+          name: build it
+          command: |
+            mkdir cbuild
+            cd cbuild
+            cmake ..
 
 workflows:
   version: 2.1

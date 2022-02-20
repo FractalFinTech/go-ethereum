@@ -1,18 +1,30 @@
 version: 2.1
 
-orbs:
-  win: circleci/windows@2.2.0
-  
+
 jobs:
-  build:
-    executor:
-      name: win/default
-      shell: powershell.exe
+    docker:
+      - image: "cimg/base:stable-20.04"
     steps:
       - checkout
       - run:
-          name: Installing g++
-          command: 'choco install mingw'
-
-      
-  
+          name: Installing SUDO
+          command: 'sudo apt-get update && sudo apt-get install -y && sudo rm -rf /var/lib/apt/lists/*'
+      - run:
+          name: Installing GCC
+          command: 'sudo apt-get update && sudo apt-get install -y gcc-9 g++'
+      - run:
+          name: Install CMAKE
+          command: 'sudo apt-get update && sudo apt-get install -y cmake'
+      - run:
+          name: Install deps
+          command: |
+            sudo apt-get update && sudo apt-get install -y zlib1g-dev
+            sudo apt-get update && sudo apt-get install -y libssl-dev
+            sudo apt-get update && sudo apt-get install -y libpcre3-dev
+            sudo apt-get update && sudo apt-get install -y libbz2-dev
+            sudo apt-get update && sudo apt-get install -y libmysqlclient-dev
+            sudo apt-get update && sudo apt-get install -y libmysql++-dev
+      - run:
+          name: Check versions
+          command: |
+            cmake --version  

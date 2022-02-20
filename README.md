@@ -14,7 +14,7 @@ archives are published at https://geth.ethereum.org/downloads/.
 
 ## Building the source
 
-[![CircleCI](https://circleci.com/gh/circleci/go-ethereum.svg?style=svg)](https://circleci.com/gh/circleci/go-ethereum?branch=master)
+[![CircleCI](https://circleci.com/gh/FractalFinTech/go-ethereum.svg?style=svg)](https://circleci.com/gh/FractalFinTech/go-ethereum)
 
 For prerequisites and detailed build instructions please read the [Installation Instructions](https://geth.ethereum.org/docs/install-and-build/installing-geth).
 

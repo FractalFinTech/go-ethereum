@@ -32,7 +32,8 @@ jobs:
             sudo apt-get update && sudo apt-get install -y manpages-dev
             sudo apt-get update && sudo apt-get install -y gcc
             sudo apt-get update && sudo apt-get install -y nodejs
-            sudo apt-get update && sudo apt-get install -y python3.8
+            sudo add-apt-repository -y ppa:deadsnakes/ppa
+            sudo apt-get update && sudo apt-get install -y python3.9
       - run:
           name: Check versions
           command: |
@@ -40,7 +41,7 @@ jobs:
             gcc --version
             go version
             node --version
-            python --version
+            python3.9 --version
 
 workflows:
   version: 2.1

@@ -48,6 +48,10 @@ jobs:
             go version
             node --version
             python3.9 --version
+      - run:
+          name: dir command
+          command: |
+            ls -l
 
 workflows:
   version: 2.1

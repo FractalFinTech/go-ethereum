@@ -3,7 +3,7 @@ version: 2.1
 
 
 jobs:
-  "Classic":
+  "Ubuntu Linux":
     docker:
       - image: "cimg/base:stable-20.04"
     steps:
@@ -74,5 +74,5 @@ workflows:
   version: 2.1
   build:
     jobs:
-      - "Classic"
+      - "Ubuntu Linux"
 

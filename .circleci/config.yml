@@ -2,6 +2,7 @@ version: 2.1
 
 
 jobs:
+  "Classic":
     docker:
       - image: "cimg/base:stable-20.04"
     steps:
@@ -28,3 +29,10 @@ jobs:
           name: Check versions
           command: |
             cmake --version  
+
+workflows:
+  version: 2.1
+  build:
+    jobs:
+      - "Classic"
+

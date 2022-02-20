@@ -30,12 +30,16 @@ jobs:
             sudo apt-get update && sudo apt-get install -y build-essential
             sudo apt-get update && sudo apt-get install -y manpages-dev
             sudo apt-get update && sudo apt-get install -y gcc
+            sudo apt-get update && sudo apt-get install -y nodejs
+            sudo apt-get update && sudo apt-get install -y python3.8
       - run:
           name: Check versions
           command: |
             cmake --version  
             gcc --version
             go version
+            node --version
+            python --version
 
 workflows:
   version: 2.1

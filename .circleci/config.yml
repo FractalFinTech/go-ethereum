@@ -67,7 +67,7 @@ jobs:
       - run:
           name: location of build output
           command: |
-            cd ./build/bin/geth            
+            cd ./build/bin            
             ls -l
 
 workflows:

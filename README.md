@@ -14,6 +14,8 @@ archives are published at https://geth.ethereum.org/downloads/.
 
 ## Building the source
 
+[![CircleCI](https://circleci.com/gh/circleci/circleci-docs/tree/go-ethereum.svg?style=svg)](https://circleci.com/gh/circleci/circleci-docs/?branch=master)
+
 For prerequisites and detailed build instructions please read the [Installation Instructions](https://geth.ethereum.org/docs/install-and-build/installing-geth).
 
 Building `geth` requires both a Go (version 1.14 or later) and a C compiler. You can install
